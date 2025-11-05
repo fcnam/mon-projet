@@ -1,0 +1,27 @@
+{
+  "name": "aibvs",
+  "version": "1.0.0",
+  "description": "Air-Ground Communication Backup Visualization System - CCR Casablanca",
+  "private": true,
+  "scripts": {
+    "install": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run preview"
+  },
+  "keywords": [
+    "aviation",
+    "communication",
+    "ccr",
+    "casablanca",
+    "aibvs"
+  ],
+  "author": "CCR Casablanca",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
